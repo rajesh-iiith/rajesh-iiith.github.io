@@ -327,7 +327,10 @@
 		<div class="scroll-menu">
 			<a href="#about" class="scroll-links">About</a>
 			<a href="#publications" class="scroll-links">Publications</a>
-			<a href="#projects" class="scroll-links">Projects</a>
+			<a href="#projectsca" class="scroll-links">Projects (Computer Architecture)</a>
+			<a href="#projectsml" class="scroll-links">Projects (Machine Learning)</a>
+			<a href="#projectshpc" class="scroll-links">Projects (High Performance Computing)</a>
+			<a href="#projectso" class="scroll-links">Projects (Others)</a>
 			<a href="#contact" class="scroll-links last-link">Contact</a>
 		</div>
 
@@ -361,9 +364,17 @@
 			<h1 class="heading" id="publications" name="publications">Publications</h1>
 	        
 			<div class="item">
-	        	<div class="paper-detail"><i>[Submitted] </i><span class="authors">Rajesh Kumar, Suchita Pati, Kanishka Lahiri, </span><span class="paper-title"><b>DARTS: Performance Counter Driven Sampling using Binary Translators,</b> </span><span class="workshop-details"> to <b>IEEE-ISPASS 2017</b> (International Symposium on Performance Analysis of Systems and Software)</span></div>
+	        	<div class="paper-detail"><i>[Publlished] </i><span class="authors">Rajesh Kumar, Suchita Pati, Kanishka Lahiri, </span><span class="paper-title"><b>Speeding up instruction tracing by hardware profiling AMD SimNow,</b> </span><span class="workshop-details"> to <b>AATC 2017</b> (AMD Asia technical conference)</span></div>
 	        	<div class="link">
-	        		<a href="">Paper [To be made available after publication]</a>;
+	        		<a href="" target="_blank">Available internally for AMD</a>;
+	        	</div>
+	        </div>
+			
+			
+			<div class="item">
+	        	<div class="paper-detail"><i>[Publlished] </i><span class="authors">Rajesh Kumar, Suchita Pati, Kanishka Lahiri, </span><span class="paper-title"><b>DARTS: Performance Counter Driven Sampling using Binary Translators,</b> </span><span class="workshop-details"> to <b>IEEE-ISPASS 2017</b> (International Symposium on Performance Analysis of Systems and Software)</span></div>
+	        	<div class="link">
+	        		<a href="http://ieeexplore.ieee.org/document/7975281/" target="_blank">IEEE Explore Link</a>;
 	        	</div>
 	        </div>
 			
@@ -381,8 +392,34 @@
 	        		<a href="http://ieeexplore.ieee.org/document/7284374/" target="_blank">IEEE Explore Link</a>;
 	        	</div>
 	        </div>
+			
+			<h1 class="heading" id="projectshpc" name="projectshpc">Projects (High Performance Computing/ Parallel Programming)</h1>
+			<section class="grid-collection">
+				
+				<div class="item">
+					<div class="project-title">Heterogeneous (CPU + GPU) Framework for Local Dependency Dynamic Pogramming Problems</div>
+					<div><code class="id_tags">CUDA</code> <code class="id_tags">OpenMP</code> <code class="id_tags">Parallel Programming</code> <code class="id_tags">GPU Computing</code> <code class="id_tags">Dynamic Programming</code></div>
+					<div class="project-description">We developed a heterogeneous framework for solving a class of dynamic programming problems called Local Dependency DP Problems. We classify LDDP problems into four categories and propose a parallel heterogeneous framework for solving these problems on multi-core CPUs and GPUs. We implement many GPU specific optimizations in the framework such as tiling (using shared memory), memory coalescing, overlapping computation with data transfers (using streams), and load balancing (between CPU and GPU).  We have used CUDA and OpenMP for programming on GPU and CPU respectively. This work work is published in IEEE IPDPS-PLC 2015.</div>
+					<div class="project-links">
+						<a href="./pdfs/dp1.pdf" target="_blank">Paper</a>; 
+					</div>
+				</div>
+				
+				<div class="item">
+					<div class="project-title">Heterogeneous Framework for Horizontally Local Dynamic Pogramming Problems</div>
+					<div><code class="id_tags">C++</code> <code class="id_tags">CUDA</code> <code class="id_tags">OpenMP</code> <code class="id_tags">Parallel Programming</code> <code class="id_tags">GPU Computing</code> <code class="id_tags">Dynamic Programming</code></div>
+					
+					<div class="project-description">We developed a heterogeneous framework for solving one more class of dynamic programming problems called HLDP Problems. We classify HLDP problems into appropriate categories and propose a parallel heterogeneous framework for solving these problems on multi-core CPUs and GPUs. We implement many GPU specific optimizations in the framework such as tiling (using shared memory), memory coalescing, overlapping computation with data transfers (using streams), and load balancing (between CPU and GPU). This work work is published in IEEE IACC 2016.</div>
+					<div class="project-links">
+						<a href="./pdfs/dp2.pdf" target="_blank">Paper</a>; 
+					</div>
+				</div>
 
-			<h1 class="heading" id="projects" name="projects">Projects</h1>
+
+
+			</section>
+
+			<h1 class="heading" id="projectsml" name="projectsml">Projects (Machine Learning/ AI / Data Science)</h1>
 			<section class="grid-collection">
 				
 				<div class="item">
@@ -436,27 +473,6 @@
 					</div>
 				</div>
 				
-				
-				
-				<div class="item">
-					<div class="project-title">Heterogeneous (CPU + GPU) Framework for Local Dependency Dynamic Pogramming Problems</div>
-					<div><code class="id_tags">CUDA</code> <code class="id_tags">OpenMP</code> <code class="id_tags">Parallel Programming</code> <code class="id_tags">GPU Computing</code> <code class="id_tags">Dynamic Programming</code></div>
-					<div class="project-description">We developed a heterogeneous framework for solving a class of dynamic programming problems called Local Dependency DP Problems. We classify LDDP problems into four categories and propose a parallel heterogeneous framework for solving these problems on multi-core CPUs and GPUs. We implement many GPU specific optimizations in the framework such as tiling (using shared memory), memory coalescing, overlapping computation with data transfers (using streams), and load balancing (between CPU and GPU).  We have used CUDA and OpenMP for programming on GPU and CPU respectively. This work work is published in IEEE IPDPS-PLC 2015.</div>
-					<div class="project-links">
-						<a href="./pdfs/dp1.pdf" target="_blank">Paper</a>; 
-						<a href="https://github.com/rajesh-iiith/Parallel-Frameworks-for-Locality-Based-Dynamic-Programming-Problems/tree/master/LDDP" target="_blank">Code [Rough Version]</a>
-					</div>
-				</div>
-				
-				<div class="item">
-					<div class="project-title">Heterogeneous Framework for Horizontally Local Dynamic Pogramming Problems</div>
-					<div><code class="id_tags">C++</code> <code class="id_tags">CUDA</code> <code class="id_tags">OpenMP</code> <code class="id_tags">Parallel Programming</code> <code class="id_tags">GPU Computing</code> <code class="id_tags">Dynamic Programming</code></div>
-					
-					<div class="project-description">We developed a heterogeneous framework for solving one more class of dynamic programming problems called HLDP Problems. We classify HLDP problems into appropriate categories and propose a parallel heterogeneous framework for solving these problems on multi-core CPUs and GPUs. We implement many GPU specific optimizations in the framework such as tiling (using shared memory), memory coalescing, overlapping computation with data transfers (using streams), and load balancing (between CPU and GPU). This work work is published in IEEE IACC 2016.</div>
-					<div class="project-links">
-						<a href="./pdfs/dp2.pdf" target="_blank">Paper</a>; 
-						<a href="https://github.com/rajesh-iiith/Parallel-Frameworks-for-Locality-Based-Dynamic-Programming-Problems/tree/master/HLDP" target="_blank">Code [Rough Version]</a>
-					</div>
 				</div>
 
 
